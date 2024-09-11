@@ -1,4 +1,4 @@
-﻿public class Matriz
+﻿class Matriz
 {
 
     private int[,] mat;
