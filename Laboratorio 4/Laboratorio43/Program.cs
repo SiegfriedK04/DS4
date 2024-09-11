@@ -1,4 +1,5 @@
-﻿static void Main(string[] args)
+﻿using System;
+static void Main(string[] args)
 {
     int suma, cant, valor, promedio;
     string linea;

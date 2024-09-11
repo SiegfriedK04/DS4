@@ -1,4 +1,5 @@
-﻿class Program
+﻿using System;
+class Program
 {
     static void Main(string[] args)
     {
@@ -13,7 +14,7 @@
         // Inicialización de variables
         edad1 = edad2 = edad3 = edad4 = 32;
 
-        // Corregida la cantidad de argumentos en Console.WriteLine
+        
         Console.WriteLine("{0}, {1}, {2}, {3}, {4}", edad1, edad2, edad3, edad4, edad5);
     }
 }
