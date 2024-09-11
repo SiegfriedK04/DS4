@@ -1,30 +1,38 @@
 ﻿using System;
-static void Main(string[] args)
+
+class Program
 {
-    int suma, cant, valor, promedio;
-    string linea;
-    suma = 0;
-    cant = 0;
-    do
+    static void Main(string[] args)
     {
-        Console.Write("Ingrese un numero (0 para finalizar); ");
-        linea = Console.ReadLine();
-        valor = int.Parse(linea);
-        if (valor != 0)
+        int suma, cant, valor, promedio;
+        string linea;
+        suma = 0;
+        cant = 0;
+
+        do
         {
-            suma = suma + valor;
-            cant++;
+            Console.Write("Ingrese un número (0 para finalizar): ");
+            linea = Console.ReadLine();
+            valor = int.Parse(linea);
+
+            if (valor != 0)
+            {
+                suma = suma + valor; 
+                cant++;
+            }
+        } while (valor != 0);
+
+        if (cant != 0)
+        {
+            promedio = suma / cant;
+            Console.Write("El promedio de los valores ingresados es: ");
+            Console.Write(promedio); 
         }
-    } while (valor != 0);
-    if (cant != 0)
-    {
-        promedio = suma / cant;
-        Console.Write("El promedio de los valores ingresados es: ");
-        Console.Write(promedio);
+        else
+        {
+            Console.Write("No se ingresaron valores.");
+        }
+
+        Console.ReadLine();
     }
-    else
-    {
-        Console.Write("No se ingresaron vaores ");
-    }
-    Console.ReadLine();
 }
