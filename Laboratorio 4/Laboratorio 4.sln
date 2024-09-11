@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio43", "Laboratori
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio44", "Laboratorio44\Laboratorio44.csproj", "{C42147C1-C5B1-4112-A469-E432F0B3A080}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio45", "Laboratorio45\Laboratorio45.csproj", "{EEEBF416-C2A4-4F69-ABC2-E7DC3C628DEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C42147C1-C5B1-4112-A469-E432F0B3A080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C42147C1-C5B1-4112-A469-E432F0B3A080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C42147C1-C5B1-4112-A469-E432F0B3A080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEEBF416-C2A4-4F69-ABC2-E7DC3C628DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEEBF416-C2A4-4F69-ABC2-E7DC3C628DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEEBF416-C2A4-4F69-ABC2-E7DC3C628DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEEBF416-C2A4-4F69-ABC2-E7DC3C628DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
