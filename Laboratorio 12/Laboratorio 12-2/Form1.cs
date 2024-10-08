@@ -63,5 +63,10 @@ namespace Laboratorio12_2
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
