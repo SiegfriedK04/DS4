@@ -51,5 +51,10 @@ namespace Laboratorio12_1
         {
             this.Close(); 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

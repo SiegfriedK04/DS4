@@ -17,21 +17,21 @@ namespace Laboratorio_12_3
             InitializeComponent();
         }
 
-        // Evento para el botón "Calcular_SP" - Calcular Semiperímetro
+        
         private void Calcular_SP_Click(object sender, EventArgs e)
         {
             try
             {
-                // Convertir los valores de los TextBox a variables numéricas
-                double a = Convert.ToDouble(LA.Text); // Longitud A
-                double b = Convert.ToDouble(LB.Text); // Longitud B
-                double c = Convert.ToDouble(LC.Text); // Longitud C
+                
+                double a = Convert.ToDouble(LA.Text); 
+                double b = Convert.ToDouble(LB.Text); 
+                double c = Convert.ToDouble(LC.Text); 
 
-                // Calcular el semiperímetro
+                
                 double semiperimetro = (a + b + c) / 2;
 
-                // Mostrar el semiperímetro en el TextBox SP
-                SP.Text = semiperimetro.ToString("F2"); // F2 para formatear a 2 decimales
+                
+                SP.Text = semiperimetro.ToString("F2"); 
             }
             catch (FormatException)
             {
@@ -43,22 +43,22 @@ namespace Laboratorio_12_3
             }
         }
 
-        // Evento para el botón "Calcular_Area" - Calcular Área usando la fórmula de Herón
+        
         private void Calcular_Area_Click(object sender, EventArgs e)
         {
             try
             {
-                // Convertir los valores de los TextBox a variables numéricas
-                double a = Convert.ToDouble(LA.Text); // Longitud A
-                double b = Convert.ToDouble(LB.Text); // Longitud B
-                double c = Convert.ToDouble(LC.Text); // Longitud C
-                double semiperimetro = Convert.ToDouble(SP.Text); // Semiperímetro calculado previamente
+               
+                double a = Convert.ToDouble(LA.Text); 
+                double b = Convert.ToDouble(LB.Text); 
+                double c = Convert.ToDouble(LC.Text); 
+                double semiperimetro = Convert.ToDouble(SP.Text); 
 
-                // Calcular el área usando la fórmula de Herón
+                
                 double area = Math.Sqrt(semiperimetro * (semiperimetro - a) * (semiperimetro - b) * (semiperimetro - c));
 
-                // Mostrar el área en el TextBox A
-                A.Text = area.ToString("F2"); // F2 para formatear a 2 decimales
+                
+                A.Text = area.ToString("F2"); 
             }
             catch (FormatException)
             {
@@ -70,7 +70,7 @@ namespace Laboratorio_12_3
             }
         }
 
-        // Evento para el botón "Reset" - Limpiar todos los TextBox
+        
         private void Reset_Click(object sender, EventArgs e)
         {
             LA.Clear();
@@ -80,10 +80,10 @@ namespace Laboratorio_12_3
             A.Clear();
         }
 
-        // Evento para el botón "Salir" - Cerrar la aplicación
+        
         private void Salir_Click(object sender, EventArgs e)
         {
-            this.Close(); // Cerrar la aplicación
+            this.Close(); 
         }
 
         private void LA_TextChanged(object sender, EventArgs e)

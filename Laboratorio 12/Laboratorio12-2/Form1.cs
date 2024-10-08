@@ -17,21 +17,21 @@ namespace Laboratorio12_2
             InitializeComponent();
         }
 
-        // Evento para el botón "Compilar"
+        
         private void Compilar_Click(object sender, EventArgs e)
         {
             try
             {
-                // Convertir los valores de los TextBox a variables numéricas
-                double Nota1 = Convert.ToDouble(Valor1.Text); // Nota 1
-                double Nota2 = Convert.ToDouble(Valor2.Text); // Nota 2
-                double Nota3 = Convert.ToDouble(Valor3.Text); // Nota 3
+                
+                double Nota1 = Convert.ToDouble(Valor1.Text); 
+                double Nota2 = Convert.ToDouble(Valor2.Text); 
+                double Nota3 = Convert.ToDouble(Valor3.Text); 
 
-                // Calcular el promedio
+               
                 double Promedio = (Nota1 + Nota2 + Nota3) / 3;
 
-                // Mostrar el resultado en el TextBox de promedio (ValorFinal)
-                ValorFinal.Text = Promedio.ToString("F2"); // F2 formatea el número con 2 decimales
+                
+                ValorFinal.Text = Promedio.ToString("F2"); 
             }
             catch (FormatException)
             {
@@ -43,20 +43,25 @@ namespace Laboratorio12_2
             }
         }
 
-        // Evento para el botón "Reset"
+        
         private void Reset_Click(object sender, EventArgs e)
         {
-            // Limpiar todos los TextBox
+            
             Valor1.Clear();
             Valor2.Clear();
             Valor3.Clear();
             ValorFinal.Clear();
         }
 
-        // Evento para el botón "Salir"
+        
         private void Salir_Click(object sender, EventArgs e)
         {
-            this.Close(); // Cerrar la aplicación
+            this.Close(); 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
